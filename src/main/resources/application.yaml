@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/sem_5_task_2?currentSchema=projects
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.yaml
+    enabled: true
+springdoc:
+  override-with-generic-response: false
